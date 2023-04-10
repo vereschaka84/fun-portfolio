@@ -8,4 +8,8 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js',
 	},
+
+	plugins: [new HtmlWebpackPlugin({
+		template: path.resolve(__dirname, './src/index.html')
+	})],
 };
